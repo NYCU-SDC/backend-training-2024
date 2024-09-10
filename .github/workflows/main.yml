@@ -1,0 +1,26 @@
+name: Check File Changes
+
+on:
+  push:
+    paths-ignore:
+      - 'members/**'  # Ignore changes in the 'members' directory
+    branches:
+      - main  # You can specify which branches to run on
+
+jobs:
+  check_changes:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Check for changes outside 'members' directory
+        run: |
+          # Check if the changed files include files outside of the 'members' directory
+          if git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep -v '^members/'; then
+            echo "Files outside of 'members' directory were changed."
+            exit 1  # Exit and fail the job
+          else
+            echo "Only 'members' directory was changed."
+          fi
