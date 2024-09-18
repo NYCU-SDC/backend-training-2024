@@ -4,3 +4,6 @@
 [submodule "members/kdotwei"]
 	path = members/kdotwei
 	url = https://github.com/kdotwei/sdc-backend-training.git
+[submodule "members/gigi-igig"]
+	path = members/gigi-igig
+	url = https://github.com/gigi-igig/backend-training-2024.git
