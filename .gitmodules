@@ -4,6 +4,9 @@
 [submodule "members/kdotwei"]
 	path = members/kdotwei
 	url = https://github.com/kdotwei/sdc-backend-training.git
+[submodule "members/aa901002x"]
+	path = members/aa901002x
+	url = https://github.com/aa901002x/sdc-backend-training.git
 [submodule "members/hyching21"]
 	path = members/hyching21
 	url = https://github.com/hyching21/FastAPI-App.git
