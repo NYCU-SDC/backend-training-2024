@@ -10,3 +10,6 @@
 [submodule "members/hyching21"]
 	path = members/hyching21
 	url = https://github.com/hyching21/FastAPI-App.git
+[submodule "members/cheehan2388"]
+	path = members/cheehan2388
+	url = https://github.com/cheehan2388/backend_project.git
