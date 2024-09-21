@@ -1,5 +1,4 @@
 #!/bin/bash
-
 echo "Check Files Change..."
 ./.github/scripts/check_files.sh
 
