@@ -4,6 +4,12 @@
 [submodule "members/kdotwei"]
 	path = members/kdotwei
 	url = https://github.com/kdotwei/sdc-backend-training.git
+[submodule "members/kd229y"]
+	path = members/kd229y
+	url = https://github.com/kd229y/sdc-backend-training.git
+[submodule "members/ian60509"]
+	path = members/ian60509
+	url = https://github.com/ian60509/SDC-backend-training-submodule.git
 [submodule "members/aa901002x"]
 	path = members/aa901002x
 	url = https://github.com/aa901002x/sdc-backend-training.git
@@ -13,3 +19,33 @@
 [submodule "members/MING-CHUNLee"]
     path = members/MING-CHUNLee
     url = https://github.com/MING-CHUNLee/SDC-BackendTraining.git
+[submodule "members/kiki0518"]
+	path = members/kiki0518
+	url = https://github.com/kiki0518/sdc-backend-training.git
+[submodule "members/raelee1026"]
+	path = members/raelee1026
+	url = https://github.com/raelee1026/sdc-backend-training.git
+[submodule "members/tony96011"]
+	path = members/tony96011
+	url = https://github.com/tony96011/fastapi.git
+[submodule "members/yl622"]
+	path = members/yl622
+	url = https://github.com/yl622/SDC_backend.git
+[submodule "members/thomas0217"]
+	path = members/thomas0217
+	url = https://github.com/thomas0217/backend-traing-program.git
+[submodule "members/YourFath3r"]
+	path = members/YourFath3r
+	url = https://github.com/YourFath3r/sdc-backend.git
+[submodule "members/111550175"]
+	path = members/111550175
+	url = https://github.com/111550175/sdc-backend-training.git
+[submodule "members/tiffanyfan1015"]
+	path = members/tiffanyfan1015
+	url = https://github.com/tiffanyfan1015/sdc-backend-training.git
+[submodule "members/cheehan2388"]
+	path = members/cheehan2388
+	url = https://github.com/cheehan2388/backend_project.git
+[submodule "members/imyungchu"]
+	path = members/imyungchu
+	url = https://github.com/imyungchu/sdc-backend.git
