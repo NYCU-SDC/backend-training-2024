@@ -1,0 +1,81 @@
+name: Test Homework 2
+
+on:
+  pull_request:
+    paths:
+      - 'members/**'
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          submodules: recursive
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install global dependencies
+        run: |
+          pip install fastapi pytest uvicorn
+
+      - name: Get list of changed submodules
+        id: changed_submodules
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const pull_number = context.payload.pull_request.number;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const { data: files } = await github.rest.pulls.listFiles({
+              owner,
+              repo,
+              pull_number,
+            });
+            const changedSubmodules = files
+              .map(file => file.filename)
+              .filter(filename => filename.startsWith('members/'))
+              .map(filename => filename.split('/')[1])
+              .filter((value, index, self) => self.indexOf(value) === index);
+            
+            if (changedSubmodules.length > 1) {
+              core.setFailed(`More than one submodule changed: ${changedSubmodules.join(', ')}`);
+            } else if (changedSubmodules.length === 0) {
+              core.setFailed('No submodules were changed.');
+            } else {
+              core.setOutput('submodule', changedSubmodules[0]);
+            }
+
+      - name: Install dependencies
+        if: steps.changed_submodules.outputs.submodule != ''
+        run: |
+          submodule=${{ steps.changed_submodules.outputs.submodule }}
+          echo "Testing $submodule"
+
+      - name: Install dependencies
+        if: steps.changed_submodules.outputs.submodule != ''
+        run: |
+          submodule=${{ steps.changed_submodules.outputs.submodule }}
+          cd members/$submodule
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          fi
+
+      - name: Test submodule
+        if: steps.changed_submodules.outputs.submodule != ''
+        run: |
+          submodule=${{ steps.changed_submodules.outputs.submodule }}
+          cd members/$submodule
+          cp ../../.github/scripts/test_update_item.py .
+          pytest test_update_item.py
+
