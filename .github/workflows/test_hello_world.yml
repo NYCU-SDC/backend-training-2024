@@ -65,9 +65,8 @@ jobs:
         if: steps.changed_submodules.outputs.submodule != ''
         run: |
           submodule=${{ steps.changed_submodules.outputs.submodule }}
-          cd members/$submodule
-          git pull
-          pip install -r requirements.txt
+          git submodule update --init --recursive members/$submodule
+          pip install -r members/$submodule/requirements.txt
 
       - name: Test submodule
         if: steps.changed_submodules.outputs.submodule != ''
