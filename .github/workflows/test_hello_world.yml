@@ -66,6 +66,7 @@ jobs:
         run: |
           submodule=${{ steps.changed_submodules.outputs.submodule }}
           cd members/$submodule
+          git pull
           pip install -r requirements.txt
 
       - name: Test submodule
