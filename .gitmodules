@@ -4,6 +4,9 @@
 [submodule "members/kdotwei"]
 	path = members/kdotwei
 	url = https://github.com/kdotwei/sdc-backend-training.git
+[submodule "members/AlHIO"]
+	path = members/AlHIO
+	url = https://github.com/AlHIO/sdc-backend-training.git
 [submodule "members/kd229y"]
 	path = members/kd229y
 	url = https://github.com/kd229y/sdc-backend-training.git
@@ -40,12 +43,22 @@
 [submodule "members/tiffanyfan1015"]
 	path = members/tiffanyfan1015
 	url = https://github.com/tiffanyfan1015/sdc-backend-training.git
+[submodule "members/vch2128"]
+	path = members/vch2128
+	url = https://github.com/vch2128/sdc-backend_2024.git
 [submodule "members/cheehan2388"]
 	path = members/cheehan2388
 	url = https://github.com/cheehan2388/backend_project.git
 [submodule "members/imyungchu"]
 	path = members/imyungchu
 	url = https://github.com/imyungchu/sdc-backend.git
+[submodule "members/Hsiungg"]
+	path = members/Hsiungg
+	url = https://github.com/Hsiungg/backend_training.git
 [submodule "members/gigi-igig"]
 	path = members/gigi-igig
 	url = https://github.com/gigi-igig/sdc-backend-training.git
+[submodule "members/Lyc1103"]
+	path = members/Lyc1103
+	url = https://github.com/Lyc1103/SDC-backend-training.git
+
