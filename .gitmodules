@@ -61,7 +61,11 @@
 [submodule "members/Lyc1103"]
 	path = members/Lyc1103
 	url = https://github.com/Lyc1103/SDC-backend-training.git
+
 [submodule "members/weng1002"]
 	path = members/weng1002
 	url = https://github.com/Weng1002/sdc-backend-training.git
 
+[submodule "members/MING-CHUNLee"]
+	path = members/MING-CHUNLee
+	url = https://github.com/MING-CHUNLee/backend-training-2024-app.git
