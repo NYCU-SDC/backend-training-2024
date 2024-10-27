@@ -19,6 +19,9 @@
 [submodule "members/hyching21"]
 	path = members/hyching21
 	url = https://github.com/hyching21/FastAPI-App.git
+[submodule "members/jayhsiao0629"]
+	path = members/jayhsiao0629
+	url = https://github.com/jayhsiao0629/sdc-backend-training.git
 [submodule "members/kiki0518"]
 	path = members/kiki0518
 	url = https://github.com/kiki0518/sdc-backend-training.git
@@ -61,7 +64,13 @@
 [submodule "members/Lyc1103"]
 	path = members/Lyc1103
 	url = https://github.com/Lyc1103/SDC-backend-training.git
+<<<<<<< HEAD
 
 [submodule "members/Dartson147"]
 	path = members/Dartson147
 	url = git@github.com:Dartson147/fastapi-training.git
+=======
+[submodule "members/MING-CHUNLee"]
+	path = members/MING-CHUNLee
+	url = https://github.com/MING-CHUNLee/backend-training-2024-app.git
+>>>>>>> d867899e9c7b3d6a7addc4d213c1d9d36d62306e
