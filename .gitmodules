@@ -66,7 +66,7 @@
 	url = https://github.com/Lyc1103/SDC-backend-training.git
 [submodule "members/Dartson147"]
 	path = members/Dartson147
-	url = git@github.com:Dartson147/fastapi-training.git
+	url = https://github.com/Dartson147/fastapi-training.git
 [submodule "members/MING-CHUNLee"]
 	path = members/MING-CHUNLee
 	url = https://github.com/MING-CHUNLee/backend-training-2024-app.git
