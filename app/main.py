@@ -92,13 +92,13 @@ async def get_item(
 ):
     # 檢查 item_id 是否在 1 到 1000 之間
     if not (1 <= item_id <= 1000):
-        raise HTTPException(status_code=400, detail="item_id must be between 1 and 1000")
+        raise HTTPException(status_code=422, detail="item_id must be between 1 and 1000")
     
     # 如果提供了 q，則回傳包含 q 的描述
     if q is not None:
         return {
             "item_id": item_id,
-            "description": f"This is a sample item that matches the query {q}.",
+            "description": f"This is a sample item that matches the query {q}",
             "sort_order": sort_order
         }
     
@@ -118,7 +118,7 @@ async def update_item(
 ):
     # 檢查 item_id 是否在 1 到 1000 之間
     if not (1 <= item_id <= 1000):
-        raise HTTPException(status_code=400, detail="item_id must be between 1 and 1000")
+        raise HTTPException(status_code=422, detail="item_id must be between 1 and 1000")
     
     # 檢查 q 是否提供並符合長度限制
     if q is not None:
