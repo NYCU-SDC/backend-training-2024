@@ -5,3 +5,4 @@ docker-compose.yaml
 requirements.txt
 __pycache__
 app
+.DS_Store
